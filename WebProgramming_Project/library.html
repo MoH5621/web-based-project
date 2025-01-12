@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library - Soft Skills Academy</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .library
+        {       
+            margin-bottom: 20px; 
+            padding: 20px; 
+            background-color: white; 
+            border-radius: 8px; 
+        }
+    
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>Library</h1>
+
+        <div style="position: absolute;top: 10px;right: 10px; text-decoration: double dashed; color: whitesmoke; ">
+            <div id="clock"></div>
+            <script>
+            function updateClock() 
+            {
+                var date = new Date();
+                var dateString =
+                date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
+                
+                var timeString =
+                date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+                document.getElementById("clock").innerHTML = dateString + " " + timeString;
+            }
+
+            setInterval(updateClock, 1000);
+
+            updateClock();
+            </script>
+            
+        </div>
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="course.html">Our Courses</a>
+            <a href="stories.html">Success Stories</a>
+            <a href="library.html">Library</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="library">
+            <h2>Recommended Reading</h2>
+            <p>Explore some of the best books and articles to complement your learning:</p>
+            <ul>
+                <li><strong>How to Win Friends and Influence People</strong> by Dale Carnegie</li>
+                <li><strong>Atomic Habits</strong> by James Clear</li>
+                <li><strong>Emotional Intelligence</strong> by Daniel Goleman</li>
+                <li><strong>The 7 Habits of Highly Effective People</strong> by Stephen Covey</li>
+                <li><strong>Deep Work</strong> by Cal Newport</li>
+            </ul>
+        </section>
+
+        <section class="content-section-courses">
+            <h2>Free Resources</h2>
+            <p>Access our library of free resources:</p>
+            <ul>
+                <li><a href="https://www.investopedia.com/terms/s/soft-skills.asp">Investopedia</a></li>
+                <li><a href="https://www.sessionlab.com/blog/soft-skills-training-material/">Session lab</a></li>
+                <li><a href="https://www.thebalancemoney.com/what-are-soft-skills-2060852">The Balance</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p style="color: black; font-weight: bold; text-decoration: underline;">2024 Soft Skills Academy. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
+
